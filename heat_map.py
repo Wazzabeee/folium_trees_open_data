@@ -13,7 +13,7 @@ start_time = time.time()
 heat_data = df[['y', 'x']].values.tolist()
 HeatMap(heat_data, radius=15).add_to(france_map)
 
-france_map.save('basic_heat_map.html')
+france_map.save('viz/basic_heat_map.html')
 
 end_time = time.time()
 execution_time_method = end_time - start_time

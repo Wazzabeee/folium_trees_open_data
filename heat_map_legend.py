@@ -108,7 +108,7 @@ template = """
 macro = MacroElement()
 macro._template = Template(template)
 france_map.add_child(macro)
-france_map.save('urban_trees_density_map.html')
+france_map.save('viz/urban_trees_density_map.html')
 
 end_time = time.time()
 execution_time_method = end_time - start_time

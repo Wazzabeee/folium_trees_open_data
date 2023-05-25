@@ -9,7 +9,8 @@ df = pd.read_csv(geojson_file)
 df['code_dept'] = df['code_dept'].astype(str).str.zfill(2)
 
 tree_count = df.groupby('code_dept').size().reset_index(name='Tree_Count')
-tree_count['norm_count'] = (tree_count['Tree_Count'] - tree_count['Tree_Count'].min()) / (tree_count['Tree_Count'].max()- tree_count['Tree_Count'].min())
+tree_count['norm_count'] = (tree_count['Tree_Count'] - tree_count['Tree_Count'].min()) / (
+            tree_count['Tree_Count'].max() - tree_count['Tree_Count'].min())
 
 # Create a base map
 france_map = folium.Map(location=[46.603354, 1.888334], zoom_start=6)
@@ -39,4 +40,4 @@ choropleth.geojson.add_child(
 folium.LayerControl().add_to(france_map)
 
 # Save the map to an HTML file
-france_map.save('tree_density_choropleth_map.html')
+france_map.save('viz/tree_density_choropleth_map.html')

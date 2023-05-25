@@ -28,7 +28,7 @@ for index, row in df.iterrows():
     marker_cluster_1.add_child(marker)
     trees_added += 1
 
-france_map_1.save('urban_trees_map_1.html')
+france_map_1.save('viz/urban_trees_map_1.html')
 
 end_time = time.time()
 execution_time_method1 = end_time - start_time
@@ -44,7 +44,7 @@ for tree_location in tree_locations:
     marker_cluster_2.add_child(marker)
     trees_added += 1
 
-france_map_2.save('urban_trees_map_2.html')
+france_map_2.save('viz/urban_trees_map_2.html')
 
 end_time = time.time()
 execution_time_method2 = end_time - start_time
@@ -60,7 +60,7 @@ for tree_location in tree_locations_np:
     marker_cluster_3.add_child(marker)
     trees_added += 1
 
-france_map_3.save('urban_trees_map_3.html')
+france_map_3.save('viz/urban_trees_map_3.html')
 
 end_time = time.time()
 execution_time_method3 = end_time - start_time
@@ -70,7 +70,7 @@ start_time = time.time()
 
 df.apply(lambda row: folium.Marker(location=[row['y'], row['x']]).add_to(marker_cluster_4), axis=1)
 
-france_map_4.save('urban_trees_map_4.html')
+france_map_4.save('viz/urban_trees_map_4.html')
 
 end_time = time.time()
 execution_time_method4 = end_time - start_time
@@ -80,7 +80,7 @@ start_time = time.time()
 
 france_map_5.add_child(FastMarkerCluster(data=df[['y', 'x']].values.tolist()))
 
-france_map_5.save('urban_trees_map_5.html')
+france_map_5.save('viz/urban_trees_map_5.html')
 
 end_time = time.time()
 execution_time_method5 = end_time - start_time

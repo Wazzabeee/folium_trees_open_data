@@ -23,7 +23,7 @@ callback = """
 
 france_map.add_child(FastMarkerCluster(data=df[['y', 'x', 'genre_latin']].values.tolist(), callback=callback))
 
-france_map.save('urban_trees_map.html')
+france_map.save('viz/urban_trees_map.html')
 
 end_time = time.time()
 execution_time_method = end_time - start_time

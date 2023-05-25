@@ -11,4 +11,4 @@ department_geojson.add_to(france_map)
 folium.LayerControl().add_to(france_map)
 
 # Save the map to an HTML file
-france_map.save('french_departments.html')
+france_map.save('viz/french_departments.html')
