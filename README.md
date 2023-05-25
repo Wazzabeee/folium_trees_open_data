@@ -9,9 +9,15 @@ This repository covers :
 - Heat map with a draggable legend
 - Choropleth map of tree density by department
 
+---
+## Fast Marker Cluster
 <img src="viz/markers.gif"/>
+
 ---
+## Heat Map with Legend
 <img src="viz/heatmap.gif"/>
+
 ---
+## Choropleth Map
 <img src="viz/choropleth.gif"/>
 
