@@ -10,3 +10,8 @@ This repository covers :
 - Choropleth map of tree density by department
 
 <img src="viz/markers.gif"/>
+---
+<img src="viz/heatmap.gif"/>
+---
+<img src="viz/choropleth.gif"/>
+
