@@ -11,6 +11,8 @@ This repository covers :
 - Heat map with a draggable legend
 - Choropleth map of tree density by department
 
+More informations on the visualizations and the idea behind this project here : https://pub.towardsai.net/identify-green-spaces-in-your-city-with-folium-and-open-data-524f1143528c
+
 ---
 ## Fast Marker Cluster
 <img src="viz/markers.gif"/>
